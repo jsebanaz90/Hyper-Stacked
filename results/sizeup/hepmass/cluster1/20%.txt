@@ -1,0 +1,23 @@
+SuperLearner initialised : optL1 = true, optL2 = false, parallelism = 10
+Training data load time [35.24 seconds]
+K-Fold Split [68.97 seconds]
+RandomForest [10607.85 seconds] 
+GradientBoosted [5293.2 seconds]
+LinearSVC [1388.97 seconds]
+LogisticRegression [725.38 seconds]
+NaiveBayes [11.25 seconds] - Failed to train (negative values)
+Cross validation layer one. Hyperparameter Optimisation : true [18026.65 seconds]
+Base-Learners chosen : RandomForestClassifier, GBTClassifier, LinearSVC, LogisticRegression
+Gathering MetaFeatures [0.69 seconds]
+Meta K-Fold Split [145.74 seconds]
+RandomForest [323.41 seconds]
+GradientBoostedTree [544.98 seconds]
+LinearSVC [447.96 seconds]
+LogisticRegression [329.8 seconds]
+NaiveBayes [223.23 seconds]
+Cross validation layer two. Hyperparameter Optimisation : false [1869.39 seconds]
+Meta-Learner chosen : GBTClassifier
+Model fit time [22225.92 seconds]
+superLearner: SuperLearner[String] = SuperLearner@6c37f488
+trainValid: org.apache.spark.sql.Dataset[org.apache.spark.sql.Row] = [features: vector, label: double]
+model: SuperLearnerModel = SuperLearnerModel@70e8d0a8

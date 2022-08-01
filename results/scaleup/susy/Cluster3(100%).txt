@@ -1,0 +1,48 @@
+SuperLearner initialised : optL1 = true, optL2 = false, parallelism = 10
+Training data load time [2.19 seconds]
+K-Fold Split [12.41 seconds]
+RandomForest [2608.23 seconds]
+GradientBoosted [930.64 seconds] 
+LinearSVC [345.37 seconds]
+LogisticRegression [302.52 seconds]
+NaiveBayes [3.8 seconds] - Failed to train (negative values)
+Cross validation layer one. Hyperparameter Optimisation : true [4190.56 seconds]
+Base-Learners chosen : RandomForestClassifier, GBTClassifier, LinearSVC, LogisticRegression
+Gathering MetaFeatures [0.69 seconds]
+Meta K-Fold Split [23.42 seconds]
+RandomForest [66.65 seconds]
+GradientBoostedTree [190.67 seconds]
+LinearSVC [249.53 seconds]
+LogisticRegression [82.01 seconds]
+NaiveBayes [37.61 seconds]
+Cross validation layer two. Hyperparameter Optimisation : false [557.47 seconds]
+Meta-Learner chosen : GBTClassifier
+Model fit time [5552.88 seconds]
+Test data load time [5.89 seconds]
+ROC Leaderboard
+(SuperLearner,0.8746408960032391)
+(gbtc_844eb99893a3-3,0.8733420665852136)
+(gbtc_844eb99893a3-4,0.8732010754277165)
+(rfc_3db97c7beb92-1,0.8708042799758926)
+(rfc_3db97c7beb92-2,0.8673300019158013)
+(linearsvc_704a96520c69-5,0.8581273197906645)
+(logreg_7c5c883f1923-7,0.8569617576297357)
+(linearsvc_704a96520c69-6,0.856920380680368)
+(logreg_7c5c883f1923-8,0.8550181410124429)
+PR Leaderboard
+(SuperLearner,0.8785503303624639)
+(gbtc_844eb99893a3-3,0.8772284320505876)
+(gbtc_844eb99893a3-4,0.8771049733658933)
+(rfc_3db97c7beb92-1,0.8758196422810993)
+(rfc_3db97c7beb92-2,0.8728290827708388)
+(logreg_7c5c883f1923-7,0.8602394987226653)
+(linearsvc_704a96520c69-5,0.8602244525739889)
+(linearsvc_704a96520c69-6,0.8582212704921403)
+(logreg_7c5c883f1923-8,0.8573258466373606)
+superLearner: SuperLearner[Int] = SuperLearner@24ff30a0
+trainValid: org.apache.spark.sql.Dataset[org.apache.spark.sql.Row] = [features: vector, label: double]
+model: SuperLearnerModel = SuperLearnerModel@9365118
+test: org.apache.spark.sql.Dataset[org.apache.spark.sql.Row] = [features: vector, label: double]
+output: org.apache.spark.sql.DataFrame = [features: vector, label: double ... 3 more fields]
+roc: Double = 0.8746421549277776
+pr: Double = 0.8785485604398585

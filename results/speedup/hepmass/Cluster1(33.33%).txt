@@ -1,0 +1,47 @@
+SuperLearner initialised : optL1 = true, optL2 = false, parallelism = 10
+Training data load time [59.52 seconds]
+K-Fold Split [98.59 seconds] 
+RandomForest [13007.82 seconds]
+GradientBoosted [5522.28 seconds]
+LinearSVC [1307.61 seconds]
+LogisticRegression [1070.4 seconds]
+NaiveBayes [11.77 seconds] - Failed to train (negative values)
+Cross validation layer one. Hyperparameter Optimisation : true [20919.89 seconds]
+Base-Learners chosen : RandomForestClassifier, GBTClassifier, LinearSVC, LogisticRegression
+Gathering MetaFeatures [1.24 seconds]
+Meta K-Fold Split [178.24 seconds]
+RandomForest [453.59 seconds]
+GradientBoostedTree [668.95 seconds]
+LinearSVC [558.31 seconds]
+LogisticRegression [445.77 seconds]
+NaiveBayes [336.4 seconds]
+Cross validation layer two. Hyperparameter Optimisation : false [2463.01 seconds]
+Meta-Learner chosen : GBTClassifier
+Model fit time [24289.73 seconds]
+ROC Leaderboard
+(SuperLearner,0.9504970076802114)
+(gbtc_bebcdc6a4ede-4,0.9491227347678823)
+(gbtc_bebcdc6a4ede-3,0.9490353209701934)
+(rfc_d1b5754f10ea-1,0.9485010338495702)
+(rfc_d1b5754f10ea-2,0.9446294609326705)
+(logreg_3ef3d3052101-7,0.9175604554287933)
+(logreg_3ef3d3052101-8,0.9174931867158157)
+(linearsvc_5b7e223943ad-6,0.9173347514397459)
+(linearsvc_5b7e223943ad-5,0.9173167674303316)
+PR Leaderboard
+(SuperLearner,0.9553055433471032)
+(gbtc_bebcdc6a4ede-3,0.954122141468426)
+(rfc_d1b5754f10ea-1,0.953255988990339)
+(gbtc_bebcdc6a4ede-4,0.9528654166468827)
+(rfc_d1b5754f10ea-2,0.9499251920180676)
+(linearsvc_5b7e223943ad-5,0.9250146019177186)
+(linearsvc_5b7e223943ad-6,0.9249320607647015)
+(logreg_3ef3d3052101-7,0.9247675429953032)
+(logreg_3ef3d3052101-8,0.9244253402430053)
+superLearner: SuperLearner[String] = SuperLearner@6efaa64b
+trainValid: org.apache.spark.sql.Dataset[org.apache.spark.sql.Row] = [features: vector, label: double]
+model: SuperLearnerModel = SuperLearnerModel@419de8c2
+test: org.apache.spark.sql.DataFrame = [features: vector, label: double]
+output: org.apache.spark.sql.DataFrame = [features: vector, label: double ... 3 more fields]
+roc: Double = 0.9504973427270453
+pr: Double = 0.9553043876671188
