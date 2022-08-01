@@ -1,0 +1,47 @@
+SuperLearner initialised : optL1 = true, optL2 = false, parallelism = 10
+Training data load time [5.56 seconds]
+K-Fold Split [12.9 seconds]
+RandomForest [2744.51 seconds] 
+GradientBoosted [1186.47 seconds]
+LinearSVC [359.11 seconds]
+LogisticRegression [167.94 seconds]
+NaiveBayes [2.29 seconds] - Failed to train (negative values)
+Cross validation layer one. Hyperparameter Optimisation : true [4460.31 seconds]
+Base-Learners chosen : RandomForestClassifier, GBTClassifier, LinearSVC, LogisticRegression
+Gathering MetaFeatures [1.25 seconds]
+Meta K-Fold Split [14.72 seconds]
+RandomForest [60.43 seconds]
+GradientBoostedTree [220.12 seconds]
+LinearSVC [294.48 seconds]
+LogisticRegression [91.05 seconds]
+NaiveBayes [37.17 seconds]
+Cross validation layer two. Hyperparameter Optimisation : false [703.25 seconds]
+Meta-Learner chosen : GBTClassifier
+Model fit time [5798.45 seconds]
+ROC Leaderboard
+(SuperLearner,0.9508544865208808)
+(gbtc_09eaf2569e3d-4,0.9497225269552731)
+(gbtc_09eaf2569e3d-3,0.9492617018234556)
+(rfc_a7ee50d28de7-1,0.9491861602294501)
+(rfc_a7ee50d28de7-2,0.9449053424237714)
+(logreg_f34772ca9839-7,0.917555997661868)
+(logreg_f34772ca9839-8,0.917488905174446)
+(linearsvc_a7230886238f-6,0.9173319529917643)
+(linearsvc_a7230886238f-5,0.9173128514508649)
+PR Leaderboard
+(SuperLearner,0.9555651963220022)
+(gbtc_09eaf2569e3d-4,0.9546919337964395)
+(gbtc_09eaf2569e3d-3,0.9542857298294707)
+(rfc_a7ee50d28de7-1,0.953848017219844)
+(rfc_a7ee50d28de7-2,0.9501163799866897)
+(linearsvc_a7230886238f-5,0.9250272317404782)
+(linearsvc_a7230886238f-6,0.924948424056541)
+(logreg_f34772ca9839-7,0.9247933194691571)
+(logreg_f34772ca9839-8,0.9244494058195841)
+superLearner: SuperLearner[String] = SuperLearner@d9f665
+trainValid: org.apache.spark.sql.Dataset[org.apache.spark.sql.Row] = [features: vector, label: double]
+model: SuperLearnerModel = SuperLearnerModel@4614a562
+test: org.apache.spark.sql.DataFrame = [features: vector, label: double]
+output: org.apache.spark.sql.DataFrame = [features: vector, label: double ... 3 more fields]
+roc: Double = 0.9508545601975038
+pr: Double = 0.9555659064984459

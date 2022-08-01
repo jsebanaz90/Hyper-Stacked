@@ -1,0 +1,47 @@
+SuperLearner initialised : optL1 = true, optL2 = false, parallelism = 10
+Training data load time [21.44 seconds]
+K-Fold Split [39.54 seconds]
+RandomForest [7940.81 seconds] 
+GradientBoosted [2535.96 seconds]
+LinearSVC [520.69 seconds]
+LogisticRegression [418.74 seconds]
+NaiveBayes [6.67 seconds] - Failed to train (negative values)
+Cross validation layer one. Hyperparameter Optimisation : true [11422.87 seconds]
+Base-Learners chosen : RandomForestClassifier, GBTClassifier, LinearSVC, LogisticRegression
+Gathering MetaFeatures [1.45 seconds]
+Meta K-Fold Split [65.23 seconds]
+RandomForest [155.06 seconds]
+GradientBoostedTree [327.62 seconds]
+LinearSVC [297.64 seconds]
+LogisticRegression [157.83 seconds]
+NaiveBayes [119.65 seconds]
+Cross validation layer two. Hyperparameter Optimisation : false [1057.8 seconds]
+Meta-Learner chosen : GBTClassifier
+Model fit time [14215.5 seconds]
+ROC Leaderboard
+(SuperLearner,0.9514149085310691)
+(gbtc_c2d7faa1303a-4,0.9503731005528027)
+(rfc_72d1f7ad61f2-1,0.950050662745111)
+(gbtc_c2d7faa1303a-3,0.9499237650284835)
+(rfc_72d1f7ad61f2-2,0.9450384447722636)
+(logreg_d02134d7bf3a-7,0.9175623667406595)
+(logreg_d02134d7bf3a-8,0.9174908766526748)
+(linearsvc_1235a51cb179-6,0.9173446113288114)
+(linearsvc_1235a51cb179-5,0.917323631516694)
+PR Leaderboard
+(SuperLearner,0.9560866731745818)
+(gbtc_c2d7faa1303a-4,0.9552961946681564)
+(gbtc_c2d7faa1303a-3,0.9549093526927621)
+(rfc_72d1f7ad61f2-1,0.9545667311434295)
+(rfc_72d1f7ad61f2-2,0.9502455711775103)
+(linearsvc_1235a51cb179-5,0.9250015563261205)
+(linearsvc_1235a51cb179-6,0.9249189170145694)
+(logreg_d02134d7bf3a-7,0.9247614844823603)
+(logreg_d02134d7bf3a-8,0.9244143989198453)
+superLearner: SuperLearner[String] = SuperLearner@54ebecca
+trainValid: org.apache.spark.sql.Dataset[org.apache.spark.sql.Row] = [features: vector, label: double]
+model: SuperLearnerModel = SuperLearnerModel@30c1d36b
+test: org.apache.spark.sql.DataFrame = [features: vector, label: double]
+output: org.apache.spark.sql.DataFrame = [features: vector, label: double ... 3 more fields]
+roc: Double = 0.9514200502215878
+pr: Double = 0.9560884110784551
